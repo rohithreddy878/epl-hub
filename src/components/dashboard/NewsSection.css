@@ -1,0 +1,77 @@
+.news-section {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 200px;
+    /* Increased padding for more space */
+    background: #f7f7f7; /* Light background for the section */
+    border-radius: 15px; /* Rounded corners for the section */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); /* Soft shadow for the section */
+}
+
+.news-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 5px;
+    font-weight: 600;
+    color: #333; /* Darker text for better contrast */
+    margin-bottom: 30px;
+    text-transform: uppercase; /* Adds emphasis */
+    letter-spacing: 2px; /* Spacing for a modern look */
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Up to 3 cards, adjusting as screen size reduces */
+    gap: 50px; /* Adjusted gap for better spacing */
+    padding: 0;
+}
+
+.news-card {
+    background: linear-gradient(135deg, #f06, #ff9e2c); /* Gradient background */
+    border-radius: 12px; /* Rounded corners for the cards */
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Larger shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for hover */
+    color: white; /* White text on colorful background */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures content is spaced out within the card */
+    height: 100%; /* Ensures the card stretches to fill its container */
+    background-size: cover; /* Ensures background fills the card */
+    background-position: center; /* Centering the gradient background */
+    border: 2px solid transparent; /* Adding border for extra sharpness */
+    background-clip: padding-box; /* Makes the background clip outside the border */
+}
+
+.news-card:hover {
+    transform: translateY(-10px); /* Lifts the card on hover */
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.news-card h3 {
+    font-size: 1.6rem; /* Slightly larger font size for titles */
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff; /* Ensures the title stands out */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Light shadow for title */
+}
+
+.news-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #f7f7f7; /* Slightly lighter text for readability */
+}
+
+.news-card a {
+    text-decoration: none;
+    color: white; /* Keeps the link text white */
+    font-weight: 600;
+    margin-top: auto; /* Pushes the link to the bottom */
+    transition: color 0.3s ease;
+    letter-spacing: 1px; /* Adds spacing for a sleek look */
+}
+
+.news-card a:hover {
+    color: #ffd700; /* Changes link color on hover */
+}
